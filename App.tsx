@@ -1,10 +1,11 @@
+
 import React, { useState, useMemo } from 'react';
-import { Game, GameCategory } from './types.ts';
-import { GAMES } from './constants.ts';
-import Navbar from './components/Navbar.tsx';
-import Sidebar from './components/Sidebar.tsx';
-import GameCard from './components/GameCard.tsx';
-import GameOverlay from './components/GameOverlay.tsx';
+import { Game, GameCategory } from './types';
+import { GAMES } from './constants';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import GameCard from './components/GameCard';
+import GameOverlay from './components/GameOverlay';
 
 const App: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<GameCategory>(GameCategory.ALL);
